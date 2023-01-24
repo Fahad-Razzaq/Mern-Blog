@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+$bg-color: #f5f7fb;
+$border-color: #dee0ea;
+$primary-color: #1976d2;
+$grey-text: #909090;
+$dark: #4e4e4e;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1024px;
+    // background-color: $bg-color;
+
+    .heading {
+      color: $dark;
+    }
+
+    .section {
+      padding: 20px 10px;
+      background-color: #fff;
+    }
+    .grey-bg {
+      background-color: $bg-color;
+      // padding: 5px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .form-box {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      gap: 15px;
+      background-color: white;
+      border-radius: 10px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: $border-color;
+
+      span {
+        color: $grey-text;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+
+    input {
+      padding: 14px 12px;
+      border: 0px;
+      border-radius: 5px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #dee0ea;
+      transition-duration: 0.4s;
+    }
+    input:hover {
+      outline: 1px solid $primary-color;
+      outline-width: thin;
+    }
+    input:focus-visible {
+      outline: 1px solid $primary-color;
+      outline-width: thin;
+    }
+
+    button {
+      background-color: $primary-color;
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 14px 12px;
+      border: 0px;
+      border-radius: 5px;
+      transition-duration: 0.4s;
+    }
+    button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    button:disabled,
+    button[disabled] {
+      border: none;
+      background-color: #e0e0e0;
+      color: #a6a6a6;
+      box-shadow: none;
+    }
+
+    #error {
+      background-color: #d32f2f;
+      color: white;
+    }
+
+    #warning {
+      background-color: #ed6c02;
+      color: white;
+    }
+    #info {
+      background-color: #0288d1;
+      color: white;
+    }
+    #success {
+      background-color: #2e7d32;
+      color: white;
+    }
+
+    .messageBar {
+      font-size: 16px;
+      padding: 10px 16px;
+      border-radius: 5px;
+    }
+
+    #error-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #error-page li {
+      list-style-type: none;
+      color: #909090;
+      margin: 0;
+      padding: 0;
+    }
+
+    #error-page > * {
+      margin: 10px;
+    }
+
+    // Login & Register
+    .auth {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: $bg-color;
+    }
+  }
+}
