@@ -2,7 +2,7 @@
 
 This is a Blog app made in mern stack for education purpose.
 
-##Technologies used
+**Technologies used**
 
 1. React
 2. Express
